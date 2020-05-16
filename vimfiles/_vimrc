@@ -2,20 +2,22 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
-"set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
-"call vundle#begin('$HOME/.vim/bundle')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'scrooloose/nerdtree'
-
+" color scheme
 Plugin 'nanotech/jellybeans.vim'
 
+" status line
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" NERDTree
+Plugin 'scrooloose/nerdtree'
+
+" Advanced icons
 Plugin 'ryanoasis/vim-devicons'
 
 call vundle#end()
