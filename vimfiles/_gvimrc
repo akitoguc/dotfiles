@@ -2,18 +2,20 @@
 "set lines=40
 " ウィンドウの横幅
 set columns=90
+
 " カラースキーム
 colorscheme jellybeans
 
+" フォント
 set guifont=Cica:h11
 set printfont=Cica:h8
-"set renderingoptions=type:directx,renmode:5
+
+" 全角文字を正しく表示させるためのオプション
 set ambiwidth=double
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 
-
-" タブライン
+" タブライン (2でタブライン表示)
 set showtabline=1
 
