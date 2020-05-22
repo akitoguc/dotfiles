@@ -85,6 +85,8 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 
 " キーバインド
-map <C-n> :NERDTreeToggle<CR>
+noremap <C-n> :NERDTreeToggle<CR>
+noremap <C-Tab> :bnext<CR>
+noremap <C-S-Tab> :bprev<CR>
 
 
