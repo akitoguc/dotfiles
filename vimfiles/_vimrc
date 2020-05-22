@@ -47,8 +47,6 @@ set showcmd
 " 見た目系
 " 行番号を表示
 set number
-" インデントはスマートインデント
-set smartindent
 " ビープ音を可視化
 "set visualbell
 " コマンドラインの補完
@@ -71,6 +69,10 @@ set expandtab
 set tabstop=4
 " 行頭でのTab文字の表示幅
 set shiftwidth=4
+" インデントはスマートインデント
+set smartindent
+" 改行時に前の行のインデントを継続
+set autoindent
 
 
 " 検索系
