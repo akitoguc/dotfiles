@@ -20,6 +20,11 @@ Plugin 'scrooloose/nerdtree'
 " Advanced icons
 Plugin 'ryanoasis/vim-devicons'
 
+" Markdown
+Plugin 'plasticboy/vim-markdown'
+Plugin 'kannokanno/previm'
+Plugin 'tyru/open-browser.vim'
+
 call vundle#end()
 filetype plugin indent on
 
