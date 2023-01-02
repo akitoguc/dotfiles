@@ -38,6 +38,10 @@ set directory=$TEMP\Vim\swap,$TEMP
 " アンドゥファイル
 set undofile
 set undodir=$TEMP\Vim\undo,$TEMP
+" viminfoファイル
+let s:viminfo_path=substitute(expand('$TEMP\Vim\_viminfo'), '\\', '\\\\', 'g')
+execute 'set viminfo+=n' . s:viminfo_path
+
 " 編集中のファイルが変更されたら自動で読み直す
 set autoread
 " 開いたファイルの場所をカレントディレクトリにする
