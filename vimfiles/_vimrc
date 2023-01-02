@@ -95,10 +95,26 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 "noremap <C-n> :NERDTreeToggle<CR>
 noremap <C-Tab> :bnext<CR>
 noremap <C-S-Tab> :bprev<CR>
+noremap <silent> <C-p> :PrevimOpen<CR>
 
 
 " JSONの整形(jq)
 set rtp+=~/.vim/bundle/Vundle.vim
 let $PATH .= ';' . $HOME . '\.vim\tools'
 command! Jq %!jq-win64
+
+
+" プラグイン系
+" vim-markdown
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_auto_insert_bullets = 0
+let g:vim_markdown_new_list_item_indent = 0
+
+" previm
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+
+" open-browser.vim
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+nmap gx <Plug>(openbrowser-smart-search)
+vmap gx <Plug>(openbrowser-smart-search)
 
