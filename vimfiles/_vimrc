@@ -11,14 +11,11 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'nanotech/jellybeans.vim'
 
 " status line
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'itchyny/lightline.vim'
 
 " NERDTree
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdtree'
 
-" Advanced icons
-Plugin 'ryanoasis/vim-devicons'
 
 " Markdown
 Plugin 'plasticboy/vim-markdown'
@@ -95,7 +92,7 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 
 " キーバインド
-noremap <C-n> :NERDTreeToggle<CR>
+"noremap <C-n> :NERDTreeToggle<CR>
 noremap <C-Tab> :bnext<CR>
 noremap <C-S-Tab> :bprev<CR>
 

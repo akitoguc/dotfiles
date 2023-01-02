@@ -13,9 +13,6 @@ set printfont=Cica:h8
 " 全角文字を正しく表示させるためのオプション
 set ambiwidth=double
 
-" Airline
-let g:airline#extensions#tabline#enabled = 1
-
 " タブライン (2でタブライン表示)
 set showtabline=1
 
