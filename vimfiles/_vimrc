@@ -21,7 +21,7 @@ Plugin 'psf/black'
 
 " Markdown
 Plugin 'plasticboy/vim-markdown'
-Plugin 'kannokanno/previm'
+Plugin 'previm/previm'
 Plugin 'tyru/open-browser.vim'
 
 call vundle#end()
@@ -118,6 +118,8 @@ let g:vim_markdown_new_list_item_indent = 0
 
 " previm
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+nnoremap <silent> <C-p> :PrevimOpen<CR>
+let g:previm_enabled_realtime = 1
 
 " open-browser.vim
 let g:netrw_nogx = 1 " disable netrw's gx mapping.
