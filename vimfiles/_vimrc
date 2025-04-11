@@ -16,6 +16,8 @@ Plugin 'itchyny/lightline.vim'
 " NERDTree
 "Plugin 'scrooloose/nerdtree'
 
+" Black
+Plugin 'psf/black'
 
 " Markdown
 Plugin 'plasticboy/vim-markdown'
@@ -121,4 +123,7 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 let g:netrw_nogx = 1 " disable netrw's gx mapping.
 nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
+
+" black
+let g:black_virtualenv = $HOME . '\.venvs\black37'
 
